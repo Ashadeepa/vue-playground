@@ -4,6 +4,6 @@ import VisualizeLifeCycle from '../components/VisualizeLifeCycle.vue'
 
 <template>
   <main>
-    <VisualizeLifeCycle msg="Visulize Life Cycle"/>
+    <VisualizeLifeCycle msg="View Vue Lifecycle events Sqequence"/>
   </main>
 </template>
