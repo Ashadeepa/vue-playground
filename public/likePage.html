@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram-like Post</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #fafafa;
+    }
+    .post {
+      width: 400px;
+      border: 1px solid #dbdbdb;
+      border-radius: 3px;
+      background-color: #fff;
+    }
+    .post-header, .post-footer {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .post-header img, .post-footer img {
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+    .post-image {
+      width: 60%;
+      height: auto;
+      margin-left: 20%;
+    }
+    .post-actions {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    .post-actions button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="post">
+    <div class="post-header">
+      <img src="./vite.svg" alt="User profile picture">
+      <span>Username</span>
+    </div>
+    <img class="post-image" src="./rsvk.jpg" alt="Post image">
+    <div class="post-actions">
+      <button onclick="likePost()">❤️ Like</button>
+      <button>💬 Comment</button>
+    </div>
+    <div class="post-footer">
+      <img src="./vite.svg" alt="User profile picture">
+      <span>Liked by <strong>user1</strong> and <strong>others</strong></span>
+    </div>
+  </div>
+  <script>
+    function likePost() {
+      alert('Post liked!');
+    }
+  </script>
+</body>
+</html></div>

@@ -13,13 +13,18 @@ import '@quasar/extras/material-icons/material-icons.css'
 // import 'quasar/src/css/index.sass'
 
 import Home from './components/Home.vue';
+import CSRF from './components/CSRF.vue';
+import ClickJacking from './components/ClickJacking.vue';
 
 const app = createApp(App);
 
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        {path:'/main', component: Home}
+        {path:'/main', component: Home},
+        {path: '/csrf', component: CSRF},
+        {path: '/cj', component: ClickJacking},
+        {path: '', redirect: '/csrf'},
     ]
   })
 
